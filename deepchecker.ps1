@@ -1,4 +1,5 @@
 Add-Type -AssemblyName PresentationFramework
+Add-Type -AssemblyName System.Windows.Forms
 
 [xml]$xaml = @"
 <Window xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
@@ -8,16 +9,13 @@ Add-Type -AssemblyName PresentationFramework
         <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="0,10,0,0">
             <Button Content="Settings" Width="120" Height="30" Margin="5" 
                     Background="#2d2d30" Foreground="White" BorderThickness="0"
-                    FontWeight="Bold" Cursor="Hand" 
-                    Style="{DynamicResource {x:Static ToolBar.ButtonStyleKey}}"/>
+                    FontWeight="Bold" Cursor="Hand" />
             <Button Content="Scan" Width="120" Height="30" Margin="5" 
                     Background="#2d2d30" Foreground="White" BorderThickness="0"
-                    FontWeight="Bold" Cursor="Hand" 
-                    Style="{DynamicResource {x:Static ToolBar.ButtonStyleKey}}"/>
+                    FontWeight="Bold" Cursor="Hand" />
             <Button Content="Advanced settings" Width="150" Height="30" Margin="5" 
                     Background="#2d2d30" Foreground="White" BorderThickness="0"
-                    FontWeight="Bold" Cursor="Hand" 
-                    Style="{DynamicResource {x:Static ToolBar.ButtonStyleKey}}"/>
+                    FontWeight="Bold" Cursor="Hand" />
         </StackPanel>
     </Grid>
 </Window>
